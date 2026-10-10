@@ -1,0 +1,117 @@
+.row {
+    display: flex;
+    background-color: black;
+}
+
+
+.left-side ,.right-side {
+    width: 50%;
+    margin: 0 10px;
+    background-color: lightgrey;
+    padding: 15px;
+}
+.left-side {
+    text-align: left;
+    float: left;
+    color: darkblue;
+}
+.right-side {
+    text-align: left;
+    float: right;
+    color: darkred;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+header {
+    background-color:black;
+    border-bottom: 5px solid black;
+    color: black;
+    text-align: center;
+}
+footer {
+    background-color: black;
+    border-top: 5px solid black;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+.footer-content {
+    background-color: lightgrey;
+    color: darkblue;
+    padding: 10px;
+    text-align: center;
+}
+.box1{
+  background-color: #cfe8ff;
+  padding: 20px;
+  width: 80%;
+  height: 80%;
+  margin: 20px auto;
+}
+
+.tasks-bar {
+  display: flex;
+  align-items: stretch;
+}
+
+.tasks-label {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+.tasks-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.tasks-send {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tasks-send:hover {
+  background-color: #2563eb;
+}
+
+.tasks-list {
+  margin-top: 20px;
+}
+
+.task-item {
+  border-bottom: 1px solid #999;
+  padding-bottom: 8px;
+}
+/* Sekction Theme */
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --box-color: #cfe8ff;
+}
+
+body.dark-theme {
+  --bg-color: #1c1c1c;
+  --text-color: #f0f0f0;
+  --box-color: #2a2a3d;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.box1, .box2, .box3, .box4, .box5 .row {
+  background-color: var(--box-color);
+}

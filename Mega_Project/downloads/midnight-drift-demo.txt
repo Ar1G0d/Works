@@ -1,0 +1,8 @@
+Midnight Drift demo package
+
+This is a local demonstration file for the NovaTorrent catalog.
+It represents an authorized sample download used only for the prototype.
+
+Version: 1.0
+Type: Demo
+License: Local preview only

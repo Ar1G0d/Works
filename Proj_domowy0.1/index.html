@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ver 0.2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box1">
+
+<!-- Sekcja 1 -->
+<div class="box3">
+  <div class="box3__top">
+    <div>
+      <h1>Wszystkie tagi HTML</h1>
+      <p>Kyrylo Shabanov 3-B</p>
+    </div>
+    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Przełącz motyw">
+      <span class="theme-toggle__icon">☀️</span>
+      <span class="theme-toggle__label">Jasny</span>
+    </button>
+  </div>
+</div>
+
+<!-- Sekcja 2 -->
+<div class="box2">
+<a href="#grupa1">Struktura</a>
+<a href="#grupa2">Metadane</a>
+<a href="#grupa3">Sekcje</a>
+<a href="#grupa4">Tekst</a>
+<a href="#grupa5">Formatowanie</a>
+<a href="#grupa6">Listy</a>
+<a href="#grupa7">Multimedia</a>
+<a href="#grupa8">Tabele</a>
+<a href="#grupa9">Formularze</a>
+<a href="#grupa10">Inne</a>
+</div>
+
+<!-- Sekcja 3 -->
+<div class="box10" id="grupa1">STRUKTURA DOKUMENTU</div>
+
+<div class="box4">
+<div class="box5">&lt;!DOCTYPE&gt;</div>
+<div class="box6">Deklaracja typu dokumentu. Musi byc w pierwszej linii pliku, mowi przegladarce ze to HTML5. To nie jest zwykly tag, nie ma zamkniecia.</div>
+<div class="box9">&lt;!DOCTYPE html&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;html&gt;</div>
+<div class="box6">Element glowny (root) calej strony. Wszystkie inne tagi sa w nim zagniezdzone. Atrybut <code>lang</code> okresla jezyk strony.</div>
+<div class="box9">&lt;html lang="pl"&gt; ... &lt;/html&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;head&gt;</div>
+<div class="box6">Sekcja z informacjami technicznymi o stronie. Zawartosc nie jest widoczna dla uzytkownika.</div>
+<div class="box9">&lt;head&gt;&lt;title&gt;Moja strona&lt;/title&gt;&lt;/head&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;body&gt;</div>
+<div class="box6">Cala widoczna tresc strony. To co tu wpiszemy, zobaczy uzytkownik w przegladarce.</div>
+<div class="box9">&lt;body&gt;&lt;p&gt;Witaj&lt;/p&gt;&lt;/body&gt;</div>
+</div>
+
+<!-- Sekcja 4 -->
+<div class="box10" id="grupa2">METADANE I POLACZENIA</div>
+
+<div class="box4">
+<div class="box5">&lt;title&gt;</div>
+<div class="box6">Tytul strony pokazywany na karcie przegladarki i w wynikach wyszukiwania.</div>
+<div class="box9">&lt;title&gt;Wszystkie tagi HTML&lt;/title&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;meta&gt;</div>
+<div class="box6">Metadane strony - kodowanie znakow, opis dla wyszukiwarek, ustawienia dla telefonow. Tag pojedynczy.</div>
+<div class="box9">&lt;meta charset="UTF-8"&gt;
+&lt;meta name="description" content="Opis strony"&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;link&gt;</div>
+<div class="box6">Laczy strone z zewnetrznym plikiem, najczesciej z arkuszem stylow CSS albo ikona strony.</div>
+<div class="box9">&lt;link rel="stylesheet" href="style.css"&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;style&gt;</div>
+<div class="box6">Pozwala napisac style CSS bezposrednio w pliku HTML, bez osobnego pliku.</div>
+<div class="box9">&lt;style&gt; p { color: red; } &lt;/style&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;script&gt;</div>
+<div class="box6">Wstawia kod JavaScript do strony albo podlacza zewnetrzny plik js.</div>
+<div class="box9">&lt;script src="skrypt.js"&gt;&lt;/script&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;noscript&gt;</div>
+<div class="box6">Tresc pokazywana tylko wtedy, gdy uzytkownik ma wylaczony JavaScript.</div>
+<div class="box9">&lt;noscript&gt;Wlacz JavaScript&lt;/noscript&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;base&gt;</div>
+<div class="box6">Ustawia bazowy adres dla wszystkich linkow wzglednych na stronie. Moze byc tylko jeden w dokumencie.</div>
+<div class="box9">&lt;base href="https://przyklad.pl/"&gt;</div>
+</div>
+
+<!-- Sekcja 5 -->
+<div class="box10" id="grupa3">TAGI SEKCJI (SEMANTYCZNE)</div>
+
+<div class="box4">
+<div class="box5">&lt;header&gt;</div>
+<div class="box6">Naglowek strony lub sekcji. Zwykle zawiera logo, tytul i menu.</div>
+<div class="box9">&lt;header&gt;&lt;h1&gt;Moja strona&lt;/h1&gt;&lt;/header&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;nav&gt;</div>
+<div class="box6">Blok nawigacji - menu z linkami do innych części strony.</div>
+<div class="box9">&lt;nav&gt;&lt;a href="#"&gt;Start&lt;/a&gt;&lt;/nav&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;main&gt;</div>
+<div class="box6">Glowna tresc strony. Na jednej stronie powinien byc tylko jeden taki tag.</div>
+<div class="box9">&lt;main&gt;Tresc strony&lt;/main&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;section&gt;</div>
+<div class="box6">Logiczna sekcja o wspolnym temacie, zwykle z wlasnym naglowkiem.</div>
+<div class="box9">&lt;section&gt;&lt;h2&gt;O mnie&lt;/h2&gt;&lt;/section&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;article&gt;</div>
+<div class="box6">Samodzielny fragment tresci, ktory ma sens sam w sobie - artykul, post, komentarz.</div>
+<div class="box9">&lt;article&gt;Tresc artykulu&lt;/article&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;aside&gt;</div>
+<div class="box6">Tresc poboczna, luzno zwiazana z glowna - pasek boczny, reklama, ciekawostki.</div>
+<div class="box9">&lt;aside&gt;Podobne artykuly&lt;/aside&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;footer&gt;</div>
+<div class="box6">Stopka strony lub sekcji. Zwykle kontakt, prawa autorskie, linki.</div>
+<div class="box9">&lt;footer&gt;&copy; 2026&lt;/footer&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;h1&gt; - &lt;h6&gt;</div>
+<div class="box6">Szesc poziomow naglowkow. <code>&lt;h1&gt;</code> najwazniejszy, <code>&lt;h6&gt;</code> najmniej wazny.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<h1 style="margin:3px 0;font-size:22px;">Naglowek h1</h1>
+<h2 style="margin:3px 0;font-size:19px;">Naglowek h2</h2>
+<h3 style="margin:3px 0;font-size:17px;">Naglowek h3</h3>
+<h4 style="margin:3px 0;font-size:15px;">Naglowek h4</h4>
+<h5 style="margin:3px 0;font-size:14px;">Naglowek h5</h5>
+<h6 style="margin:3px 0;font-size:13px;">Naglowek h6</h6>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;hgroup&gt;</div>
+<div class="box6">Grupuje glowny naglowek razem z podtytulem, zeby przegladarka traktowala je jako calosc.</div>
+<div class="box9">&lt;hgroup&gt;&lt;h1&gt;Tytul&lt;/h1&gt;&lt;p&gt;Podtytul&lt;/p&gt;&lt;/hgroup&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;address&gt;</div>
+<div class="box6">Dane kontaktowe autora strony lub artykulu. Przegladarka pokazuje je kursywa.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<address>Kontakt: mail@przyklad.pl</address>
+</div>
+</div>
+
+<!-- Sekcja 6 -->
+<div class="box10" id="grupa4">TEKST I AKAPITY</div>
+
+<div class="box4">
+<div class="box5">&lt;p&gt;</div>
+<div class="box6">Akapit tekstu. Najczesciej uzywany tag na stronach.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<p style="margin:0;">To jest zwykly akapit tekstu.</p>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;br&gt;</div>
+<div class="box6">Lamie linie w miejscu wstawienia. Tag pojedynczy, bez zamkniecia.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+Pierwsza linia<br>Druga linia
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;hr&gt;</div>
+<div class="box6">Pozioma linia oddzielajaca tresc. Oznacza zmiane tematu.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+Tekst przed<hr>Tekst po
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;pre&gt;</div>
+<div class="box6">Zachowuje wszystkie spacje i zlamania linii dokladnie tak, jak w kodzie. Uzywany do kodu i tekstu ASCII.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<pre style="margin:0;">linia 1
+    wciecie
+linia 3</pre>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;blockquote&gt;</div>
+<div class="box6">Dlugi cytat w osobnym bloku, przegladarka robi wciecie z lewej strony.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<blockquote style="margin:0 0 0 15px;">To jest dluzszy cytat z ksiazki.</blockquote>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;div&gt;</div>
+<div class="box6">Blokowy pojemnik bez wlasnego znaczenia. Sluzy do grupowania elementow i nadawania im stylow przez CSS. Na tej stronie uzywam go najczesciej.</div>
+<div class="box9">&lt;div class="box1"&gt;Zawartosc&lt;/div&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;span&gt;</div>
+<div class="box6">To samo co div, ale liniowy - uzywany wewnatrz tekstu, nie lamie linii.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+Tekst z <span style="color:red;">czerwonym slowem</span> w srodku.
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;figure&gt; i &lt;figcaption&gt;</div>
+<div class="box6">Samodzielna ilustracja z podpisem. <code>&lt;figure&gt;</code> to pojemnik, <code>&lt;figcaption&gt;</code> to podpis pod nia.</div>
+<div class="box9">&lt;figure&gt;
+  &lt;img src="kot.jpg" alt="Kot"&gt;
+  &lt;figcaption&gt;Moj kot&lt;/figcaption&gt;
+&lt;/figure&gt;</div>
+</div>
+
+<!-- Sekcja 7 -->
+<div class="box10" id="grupa5">FORMATOWANIE TEKSTU</div>
+
+<div class="box4">
+<div class="box5">&lt;strong&gt; i &lt;b&gt;</div>
+<div class="box6">Oba pogrubiaja tekst. <code>&lt;strong&gt;</code> oznacza wazna tresc (znaczenie), <code>&lt;b&gt;</code> tylko wyglad.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<strong>Tekst wazny</strong> i <b>tekst pogrubiony</b>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;em&gt; i &lt;i&gt;</div>
+<div class="box6">Oba daja kursywe. <code>&lt;em&gt;</code> to akcent w zdaniu, <code>&lt;i&gt;</code> to inny styl (np. obce slowo).</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<em>Naprawde</em> tak myslę i termin <i>de facto</i>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;u&gt;</div>
+<div class="box6">Podkresla tekst linia. Rzadko uzywany, bo myli sie z linkiem.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<u>Tekst podkreslony</u>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;mark&gt;</div>
+<div class="box6">Zaznacza tekst zoltym markerem, jakby byl podswietlony w zeszycie.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+Zwykly tekst i <mark>tekst zaznaczony</mark>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;small&gt;</div>
+<div class="box6">Zmniejsza tekst. Uzywany do przypisow, drobnego druku, praw autorskich.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+Normalny tekst <small>i drobny przypis</small>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;s&gt;</div>
+<div class="box6">Przekresla tekst, ktory jest juz nieaktualny lub nieprawdziwy.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<s>Stara informacja</s> Nowa informacja
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;del&gt; i &lt;ins&gt;</div>
+<div class="box6">Pokazuja zmiany w tekscie - <code>&lt;del&gt;</code> tresc usunieta (przekreslona), <code>&lt;ins&gt;</code> tresc dodana (podkreslona).</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+Cena: <del>100 zl</del> <ins>70 zl</ins>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;sub&gt; i &lt;sup&gt;</div>
+<div class="box6">Indeks dolny i gorny. Uzywane we wzorach chemicznych i matematycznych.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+H<sub>2</sub>O oraz E=mc<sup>2</sup>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;code&gt;</div>
+<div class="box6">Oznacza fragment kodu programu. Przegladarka pokazuje go czcionka o stalej szerokosci.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+Wpisz <code>console.log("test")</code> w konsoli.
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;var&gt;</div>
+<div class="box6">Zmienna w kodzie lub we wzorze matematycznym.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+Wartosc <var>x</var> wynosi 5.
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;samp&gt;</div>
+<div class="box6">Przykladowy wynik zwrocony przez program lub system.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+Program wypisal: <samp>Blad 404</samp>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;kbd&gt;</div>
+<div class="box6">Klawisze, ktore uzytkownik ma nacisnac na klawiaturze.</div>
+<div class="box7">
+<div class="box8">Przykład:</div>
+Nacisnij <kbd>Ctrl</kbd> + <kbd>S</kbd>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;abbr&gt;</div>
+<div class="box6">Skrót z rozwinieciem w atrybucie <code>title</code>. Po najechaniu myszką pokazuje pełną nazwę.</div>
+<div class="box7">
+<div class="box8">Przykład:</div>
+<abbr title="HyperText Markup Language">HTML</abbr> (najedz myszka)
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;dfn&gt;</div>
+<div class="box6">Oznacza termin w miejscu, gdzie jest po raz pierwszy definiowany.</div>
+<div class="box7">
+<div class="box8">Przykład:</div>
+<dfn>HTML</dfn> to język znaczników stron.
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;q&gt;</div>
+<div class="box6">Krotki cytat w linii tekstu. Przegladarka sama dodaje cudzyslowy.</div>
+<div class="box7">
+<div class="box8">Przykład:</div>
+Nauczyciel powiedzial <q>zrobcie to na jutro</q>.
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;cite&gt;</div>
+<div class="box6">Tytuł cytowanego dziela - książki, filmu, piosenki.</div>
+<div class="box7">
+<div class="box8">Przykład:</div>
+Czytalem <cite>Pana Tadeusza</cite>.
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;time&gt;</div>
+<div class="box6">Data lub godzina w formacie czytelnym dla maszyn (atrybut <code>datetime</code>).</div>
+<div class="box7">
+<div class="box8">Przykład:</div>
+Spotkanie <time datetime="2026-09-20">20 wrzesnia</time>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;data&gt;</div>
+<div class="box6">Laczy tresc widoczna z wartoscia dla maszyn, np. numerem produktu.</div>
+<div class="box9">&lt;data value="1234"&gt;Klawiatura&lt;/data&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;bdo&gt; i &lt;bdi&gt;</div>
+<div class="box6">Steruja kierunkiem tekstu. <code>&lt;bdo&gt;</code> wymusza kierunek, <code>&lt;bdi&gt;</code> izoluje fragment o innym kierunku (np. arabski w polskim zdaniu).</div>
+<div class="box7">
+<div class="box8">Przykład:</div>
+<bdo dir="rtl">Tekst od prawej</bdo>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;ruby&gt;, &lt;rt&gt;, &lt;rp&gt;</div>
+<div class="box6">Adnotacje do pisma azjatyckiego - male znaki nad znakami, pokazujace wymowe. <code>&lt;rt&gt;</code> to wymowa, <code>&lt;rp&gt;</code> to nawiasy dla starych przegladarek.</div>
+<div class="box7">
+<div class="box8">Przykład:</div>
+<ruby>漢 <rp>(</rp><rt>kan</rt><rp>)</rp></ruby>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;wbr&gt;</div>
+<div class="box6">Wskazuje miejsce, w ktorym mozna zlamac bardzo dlugie slowo, jesli nie miesci sie w linii.</div>
+<div class="box9">bardzodlugie&lt;wbr&gt;slowo</div>
+</div>
+
+<!-- Sekcja 8 -->
+<div class="box10" id=  "grupa6">LISTY</div>
+
+<div class="box4">
+<div class="box5">&lt;ul&gt; i &lt;li&gt;</div>
+<div class="box6">Lista punktowana (nieuporzadkowana). <code>&lt;ul&gt;</code> to pojemnik, <code>&lt;li&gt;</code> to pojedynczy punkt.</div>
+<div class="box7">
+<div class="box8">Przykład:</div>
+<ul style="margin:0;"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;ol&gt;</div>
+<div class="box6">Lista numerowana (uporzadkowana). Numery pojawiaja sie automatycznie.</div>
+<div class="box7">
+<div class="box8">Przykład:</div>
+<ol style="margin:0;"><li>Otworz edytor</li><li>Napisz kod</li><li>Zapisz plik</li></ol>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</div>
+<div class="box6">Lista definicji. <code>&lt;dt&gt;</code> to termin, <code>&lt;dd&gt;</code> to jego opis. Dobra do slowniczkow.</div>
+<div class="box7">
+<div class="box8">Przykład:</div>
+<dl style="margin:0;">
+<dt><b>HTML</b></dt>
+<dd>Język znaczników stron</dd>
+<dt><b>CSS</b></dt>
+<dd>Język opisu wygłądu</dd>
+</dl>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;menu&gt;</div>
+<div class="box6">Lista polecen lub narzedzi. Dziala prawie tak samo jak <code>&lt;ul&gt;</code>, ale ma inne znaczenie semantyczne.</div>
+<div class="box9">&lt;menu&gt;&lt;li&gt;Kopiuj&lt;/li&gt;&lt;li&gt;Wklej&lt;/li&gt;&lt;/menu&gt;</div>
+</div>
+
+<!-- Sekcja 9 -->
+<div class="box10" id="grupa7">LINKI I MULTIMEDIA</div>
+
+<div class="box4">
+<div class="box5">&lt;a&gt;</div>
+<div class="box6">Link (odnosnik). Atrybut <code>href</code> to adres docelowy, <code>target="_blank"</code> otwiera strone w nowej karcie.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<a href="https://developer.mozilla.org" target="_blank">Kliknij tutaj, zeby przejsc do MDN</a>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;img&gt;</div>
+<div class="box6">Wstawia obrazek. <code>src</code> to sciezka do pliku, <code>alt</code> to opis tekstowy na wypadek gdy obrazek sie nie wczyta.</div>
+<div class="box9">&lt;img src="kot.jpg" alt="Zdjecie kota" width="150"&gt;</div>
+<img class="Image" src="kot_mem.webp" alt="Meme picture">
+<img class="Image2" src="Cool.jpg" alt="Cool image">
+</div>
+
+<div class="box4">
+<div class="box5">&lt;picture&gt; i &lt;source&gt;</div>
+<div class="box6">Pozwalaja podac kilka wersji obrazka, a przegladarka wybiera najlepsza dla danego ekranu.</div>
+<div class="box9">&lt;picture&gt;
+  &lt;source srcset="duzy.jpg" media="(min-width: 800px)"&gt;
+  &lt;img src="maly.jpg" alt="Obrazek"&gt;
+&lt;/picture&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;video&gt;</div>
+<div class="box6">Odtwarza film na stronie. Atrybut <code>controls</code> dodaje przyciski sterowania.</div>
+<div class="box9">&lt;video src="film.mp4" controls width="300"&gt;&lt;/video&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;audio&gt;</div>
+<div class="box6">Odtwarza dzwięk lub muzykę. Dziala podobnie jak video.</div>
+<div class="box9">&lt;audio src="muzyka.mp3" controls&gt;&lt;/audio&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;track&gt;</div>
+<div class="box6">Dodaje napisy do filmu albo audio. Wstawia sie go wewnatrz tagu video.</div>
+<div class="box9">&lt;track src="napisy.vtt" kind="subtitles" srclang="pl"&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;iframe&gt;</div>
+<div class="box6">Osadza inna strone wewnatrz naszej - mape, film z YouTube, kalendarz.</div>
+<div class="box9">&lt;iframe src="https://example.com" width="300" height="200"&gt;&lt;/iframe&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;embed&gt; i &lt;object&gt;</div>
+<div class="box6">Wstawiaja zewnetrzna zawartosc, np. PDF albo animacje. <code>&lt;object&gt;</code> jest bardziej uniwersalny i moze miec tresc zapasowa.</div>
+<div class="box9">&lt;embed src="plik.pdf" width="300" height="200"&gt;
+&lt;object data="plik.pdf" width="300"&gt;Brak wsparcia&lt;/object&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;map&gt; i &lt;area&gt;</div>
+<div class="box6">Mapa odnosnikow na obrazku - pozwala zrobic klikalne obszary w różnych miejscach jednego zdjęcia.</div>
+<div class="box9">&lt;map name="mapka"&gt;
+  &lt;area shape="rect" coords="0,0,50,50" href="strona.html"&gt;
+&lt;/map&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;canvas&gt;</div>
+<div class="box6">Pusty obszar do rysowania grafiki przez JavaScript. Używany w grach i wykresach.</div>
+<div class="box9">&lt;canvas id="plotno" width="200" height="100"&gt;&lt;/canvas&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;svg&gt;</div>
+<div class="box6">Grafika wektorowa pisana bezpośrednio w HTML. Nie rozmazuje sie przy powiekszaniu.</div>
+<div class="box7">
+<div class="box8">Przykład:</div>
+<svg width="75" height="75"><circle cx="45" cy="45" r="25" fill="#ffa500"></circle></svg>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;math&gt;</div>
+<div class="box6">Wzory matematyczne w formacie MathML - ułamki, pierwiastki, potegi.</div>
+<div class="box9">&lt;math&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/math&gt;</div>
+</div>
+
+<!-- Sekcja 10 -->
+<div class="box10" id="grupa8">TABELE</div>
+
+<div class="box4">
+<div class="box5">&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</div>
+<div class="box6">Podstawa tabeli. <code>&lt;table&gt;</code> to cala tabela, <code>&lt;tr&gt;</code> to wiersz, <code>&lt;th&gt;</code> komorka naglowkowa, <code>&lt;td&gt;</code> zwykla komorka.</div>
+<div class="box7">
+<div class="box8">Przykład:</div>
+<table class="tabelka">
+<tr><th>Imie</th><th>Ocena</th></tr>
+<tr><td>Jan</td><td>5</td></tr>
+<tr><td>Anna</td><td>4</td></tr>
+</table>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;caption&gt;</div>
+<div class="box6">Tytul tabeli, pokazywany nad nią. Musi byc pierwszym elementem w tabeli.</div>
+<div class="box7">
+<div class="box8">Przykład:</div>
+<table class="tabelka">
+<caption style="font-weight:bold;padding-bottom:4px;">Oceny z informatyki</caption>
+<tr><th>Imie</th><th>Ocena</th></tr>
+<tr><td>Piotr</td><td>5</td></tr>
+</table>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</div>
+<div class="box6">Dziela tabele na trzy częsci - nagłówek, treść glówna i stopke z podsumowaniem.</div>
+<div class="box7">
+<div class="box8">Przykład:</div>
+<table class="tabelka">
+<thead><tr><th>Produkt</th><th>Cena</th></tr></thead>
+<tbody><tr><td>Mysz</td><td>50 zl</td></tr><tr><td>Klawiatura</td><td>120 zl</td></tr></tbody>
+<tfoot><tr><td><b>Razem</b></td><td><b>170 zl</b></td></tr></tfoot>
+</table>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;colgroup&gt; i &lt;col&gt;</div>
+<div class="box6">Pozwalaja ostylowac cale kolumny naraz, bez ustawiania kazdej komorki osobno.</div>
+<div class="box9">&lt;colgroup&gt;
+  &lt;col style="background: #eee;"&gt;
+  &lt;col&gt;
+&lt;/colgroup&gt;</div>
+</div>
+
+<!-- Sekcja 11 -->
+<div class="box10" id="grupa9">FORMULARZE</div>
+
+<div class="box4">
+<div class="box5">&lt;form&gt;</div>
+<div class="box6">Pojemnik na cały formularz. Atrybut <code>action</code> mowi gdzie wyslac dane, <code>method</code> jaka metoda (GET lub POST).</div>
+<div class="box9">&lt;form action="zapisz.php" method="post"&gt; ... &lt;/form&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;input&gt;</div>
+<div class="box6">Pole do wpisywania danych. Atrybut <code>type</code> decyduje jakiego rodzaju - tekst, haslo, email, liczba, data, kolor, checkbox, radio i wiele innych.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<div class="formularz">
+<label>type="text"</label>
+<input type="text" placeholder="Enter name">
+<label>type="password"</label>
+<input type="password" placeholder="Enter password">
+<label>type="email"</label>
+<input type="email" placeholder="Enter email">
+<label>type="number"</label>
+<input type="number" value="10">
+<label>type="date"</label>
+<input type="date">
+<label>type="color"</label>
+<input type="color" value="#3b5998" style="width:60px;">
+<label>type="range"</label>
+<input type="range">
+<label><input type="checkbox" style="width:auto;"> type="checkbox"</label>
+<label><input type="radio" name="r" style="width:auto;"> type="radio"</label>
+<label>type="file"</label>
+<input type="file">
+</div>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;label&gt;</div>
+<div class="box6">Podpis pola formularza. Atrybut <code>for</code> laczy go z polem po jego <code>id</code> - wtedy klikniecie w podpis ustawia kursor w polu.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<div class="formularz">
+<label for="pole1">Kliknij w ten napis:</label>
+<input type="text" id="pole1">
+</div>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;textarea&gt;</div>
+<div class="box6">Pole tekstowe na wiele linii, np. na komentarz albo wiadomosc.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<div class="formularz">
+<textarea rows="3" placeholder="Enter your comment..."></textarea>
+</div>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;select&gt;, &lt;option&gt;, &lt;optgroup&gt;</div>
+<div class="box6">Lista rozwijana. <code>&lt;option&gt;</code> to pojedyncza pozycja, <code>&lt;optgroup&gt;</code> grupuje pozycje pod wspolnym naglowkiem.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<div class="formularz">
+<select>
+<optgroup label="Pierwszy rok">
+<option>Grupa 1A</option>
+<option>Grupa 1B</option>
+</optgroup>
+<optgroup label="Drugi rok">
+<option>Grupa 2A</option>
+</optgroup>
+</select>
+</div>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;datalist&gt;</div>
+<div class="box6">Lista podpowiedzi do pola tekstowego. Uzytkownik moze wybrac z listy albo wpisac wlasna wartosc.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<div class="formularz">
+<input list="jezyki" placeholder="Enter language...">
+<datalist id="jezyki">
+<option value="HTML">
+<option value="CSS">
+<option value="JavaScript">
+<option value="Python">
+</datalist>
+</div>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;button&gt;</div>
+<div class="box6">Przycisk. Atrybut <code>type</code> okresla czy wysyla formularz (submit), czysci go (reset), czy nic nie robi (button).</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<button type="button">Zwykly przycisk</button>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;fieldset&gt; i &lt;legend&gt;</div>
+<div class="box6">Grupuja powiazane pola formularza w ramke. <code>&lt;legend&gt;</code> to tytul tej ramki.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<fieldset>
+<legend>Dane osobowe</legend>
+<div class="formularz">
+<input type="text" placeholder="Name">
+<input type="text" placeholder="Surname">
+</div>
+</fieldset>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;output&gt;</div>
+<div class="box6">Miejsce na wynik obliczen wykonanych przez JavaScript.</div>
+<div class="box9">&lt;output name="wynik"&gt;0&lt;/output&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;progress&gt;</div>
+<div class="box6">Pasek postepu - pokazuje ile procent zadania juz wykonano.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<progress value="25" max="100">25%</progress>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;meter&gt;</div>
+<div class="box6">Pokazuje wartosc w znanym zakresie, np. zajete miejsce na dysku albo ocene. Rozni sie od progress tym, ze nie oznacza postepu zadania.</div>
+<div class="box7">
+<div class="box8">Przyklad:</div>
+<meter value="4" min="1" max="6">4 z 6</meter>
+</div>
+</div>
+
+<!-- Sekcja 12 -->
+<div class="box10" id="grupa10">POZOSTALE TAGI</div>
+
+<div class="box4">
+<div class="box5">&lt;details&gt; i &lt;summary&gt;</div>
+<div class="box6">Rozwijany blok tresci. <code>&lt;summary&gt;</code> to widoczny naglowek, reszta pokazuje sie po klikniecu. Dziala bez JavaScriptu.</div>
+<div class="box7">
+<div class="box8">Przyklad (kliknij):</div>
+<details>
+<summary>Kliknij, zeby rozwinac</summary>
+<p style="margin:5px 0 0 0;">Ta tresc byla ukryta, a teraz jest widoczna.</p>
+</details>
+</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;dialog&gt;</div>
+<div class="box6">Okno dialogowe (modalne) wbudowane w HTML. Otwiera sie i zamyka przez JavaScript.</div>
+<div class="box9">&lt;dialog open&gt;Tresc okna&lt;/dialog&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;template&gt;</div>
+<div class="box6">Szablon HTML, ktory nie wyswietla sie od razu. JavaScript moze go skopiowac i wstawic na strone kilka razy.</div>
+<div class="box9">&lt;template id="wzor"&gt;&lt;p&gt;Tekst szablonu&lt;/p&gt;&lt;/template&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;slot&gt;</div>
+<div class="box6">Miejsce na wstawienie tresci we wlasnym komponencie (Web Components). Uzywany razem z template.</div>
+<div class="box9">&lt;slot name="tytul"&gt;&lt;/slot&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">&lt;search&gt;</div>
+<div class="box6">Nowszy tag semantyczny oznaczajacy obszar wyszukiwania na stronie - pole szukania razem z przyciskiem.</div>
+<div class="box9">&lt;search&gt;&lt;input type="search"&gt;&lt;button&gt;Szukaj&lt;/button&gt;&lt;/search&gt;</div>
+</div>
+
+<div class="box4">
+<div class="box5">Komentarze &lt;!-- --&gt;</div>
+<div class="box6">To nie jest tag, tylko sposob zapisu notatek w kodzie. Przegladarka ignoruje wszystko miedzy znacznikami i nie pokazuje tego na stronie.</div>
+<div class="box9">&lt;!-- Sekcja 1 --&gt;
+&lt;p&gt;Ten tekst widac&lt;/p&gt;</div>
+</div>
+
+<!-- Sekcja 13 -->
+<div class="box10">TAGI PRZESTARZALE (NIE UZYWAC)</div>
+
+<div class="box4">
+<div class="box5">&lt;center&gt;, &lt;font&gt;, &lt;big&gt;, &lt;marquee&gt;, &lt;frame&gt;</div>
+
+
+<!-- Sekcja 14 -->
+<div class="box11">
+Projekt domowy z HTML - Tagi z przykladami
+</div>
+
+</div>
+
+<div class="strelka" aria-label="do gory" title="Do gory">
+  <span>↑</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
